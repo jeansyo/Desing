@@ -49,7 +49,7 @@ body {
 
 .container-image img {
     margin: auto;
-    border-radius: 50%;;
+    border-radius: 50%;
     border: 3px solid #57A08B;
     min-width: 100px;
 }
