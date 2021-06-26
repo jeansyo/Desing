@@ -1,5 +1,6 @@
 body {
     background: #f0f2f5;
+    font-family: sans-serif;
 }
 
 .container {
@@ -8,7 +9,8 @@ body {
     align-items: center;
     justify-content: center;
     background: #f0f2f5;
-    margin: 8% auto;
+    height: 100vh;
+    margin: auto;
     padding: 2%;
     width: 80%;
 }
@@ -16,7 +18,7 @@ body {
 .container-form {
     text-align: center;
     padding: 4%;
-    margin: 3%;
+
     flex-grow: 1;
     order: 5;
     background: #D1E8DC;
@@ -24,6 +26,7 @@ body {
     box-shadow: 1px 1px 5px #dddfe2;
     max-width: 500px;
     max-height: 300px;
+    min-width: 400px;
 }
 
 .container-form__div-input {
@@ -42,6 +45,12 @@ body {
     background: linear-gradient(to bottom, transparent, #A0D9D2);
 }
 
+.container-form__div-input:hover {
+    outline: none;
+    border-bottom: 1.5px solid #00D999;
+    background: linear-gradient(to bottom, transparent, #A0D9D2);
+}
+
 .container-desc {
     display: flex;
     flex-grow: 1;
@@ -49,7 +58,7 @@ body {
     width: 50%;
     max-width: 500px;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 400px;
     order: -1;
     background: #f0f2f5;
 }
@@ -57,12 +66,14 @@ body {
 .container-desc img {
     margin: auto 0;
     min-width: 100px;
+    transform: translatey(-20%);
 }
 
 .container-desc p {
     margin: auto;
-    font-size: 28px;
-    padding: 3%;
+    font-size: 25px;
+    width: 100%;
+    transform: translatey(-10   %);
     text-align: center;
     color: #4a4a4a;
 }
@@ -89,8 +100,6 @@ body {
 .footer {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
     background: #D1E8DC;
     width: 100%;
     flex-direction: column;
@@ -100,7 +109,7 @@ body {
     flex-direction: row;
     flex-grow: 1;
     width: 100%;
-    padding: 1% 1%;
+    padding: 1% 0;
 }
 
 .footer-container__ul {
@@ -122,7 +131,7 @@ body {
 }
 
 .footer-copyright {
-    border-top: 0.5px solid #f0f2f5;;
+    border-top: 0.5px solid #f0f2f5;
     order: 5;
     font-size: 12px;
     color: #4a4a4a;
